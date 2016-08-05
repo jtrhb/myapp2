@@ -1,0 +1,32 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<head>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+#chatTab{width:100%;height:20px;}
+#longTab{width:50%;height:100%;}
+#longTab > a{padding: 0px;height:100%;text-align: center;}
+#shortTab > a{padding: 0px;height:100%;text-align: center;}
+#shortTab{width:50%;height:100%;}
+#longMsg{width:100%;height:200px;background-color: red;}
+#shortMsg{width:100%;height:200px;background-color: green;}
+</style>
+</head>
+<body>
+<p>标签式的导航菜单</p>
+<ul class="nav nav-tabs" id="chatTab">
+   <li class="active" id="longTab"><a href="#longMsg" data-toggle="tab">看多观点</a></li>
+   <li id="shortTab"><a href="#shortMsg" data-toggle="tab">看空观点</a></li>
+</ul>
+<div id="msgContainer" class="tab-content">
+    <div class="article-container tab-pane active" id="longMsg">
+    </div>
+    <div class="article-container tab-pane" id="shortMsg">
+    </div>
+</div> 
+</body>
+</html>
